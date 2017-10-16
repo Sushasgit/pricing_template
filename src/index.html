@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+
     <section>
         <header class="header">
             <div class="header__top">
@@ -91,56 +92,55 @@
                 </div>
             </section>
 
-                <div class="l-col-2">
-                    <section class=" l-col-2__item widget widget--primary">
+            <div class="l-col-2">
+                <section class="l-col-2__item widget widget--primary">
+                    <header class="widget__header">
+                        <div class="widget__number">2</div>
+                        <h3>Personal Information</h3>
+                    </header>
+                    <form class="widget__form">
+                        <input required type="text" placeholder="First name">
+                        <input required type="text" placeholder="Last name">
+                        <input required type="text" placeholder="Address">
+                        <input required type="text" placeholder="City">
+                        <input required type="text" placeholder="State">
+                        <input required type="text" placeholder="Zip code">
+                        <input required type="tel" placeholder="Phone">
+                        <input type="tel" placeholder="Additional phone">
+                        <input placeholder="Company">
+                    </form>
+
+                </section>
+                <section class="l-col-2__item">
+                    <section class="widget widget--primary">
                         <header class="widget__header">
-                            <div class="widget__number">2</div>
-                            <h3>Personal Information</h3>
+                            <div class="widget__number">3</div>
+                            <h3>Your Account</h3>
                         </header>
                         <form class="widget__form">
-                            <input required type="text" placeholder="First name">
-                            <input required type="text" placeholder="Last name">
-                            <input required type="text" placeholder="Address">
-                            <input required type="text" placeholder="City">
-                            <input required type="text" placeholder="State">
-                            <input required type="text" placeholder="Zip code">
-                            <input required type="tel" placeholder="Phone">
-                            <input type="tel" placeholder="Additional phone">
-                            <input placeholder="Company">
+                            <input required type="email" placeholder="Email address">
+                            <input required type="email" placeholder="Confirm email address">
+                            <input required type="password" placeholder="Password">
+                            <input required type="password" placeholder="Confirm password">
                         </form>
-
                     </section>
-                    <section class="l-col-2__item">
-                        <section class="widget widget--primary">
-                            <header class="widget__header">
-                                <div class="widget__number">3</div>
-                                <h3>Your Account</h3>
-                            </header>
-                            <form class="widget__form">
-                                <input required type="email" placeholder="Email address">
-                                <input required type="email" placeholder="Confirm email address">
-                                <input required type="password" placeholder="Password">
-                                <input required type="password" placeholder="Confirm password">
-                            </form>
-                        </section>
 
-                        <section class="widget widget--primary">
-                            <header class="widget__header">
-                                <div class="widget__number">4</div>
-                                <h3>Payment Information</h3>
-                            </header>
-                            <form class="widget__form">
-                                <input required type="text" placeholder="Credit card number">
-                                <input required type="text" placeholder="CVV">
-                                <div class="widget__total-amount">
-                                    <p>Total: <strong class="price price--primary">&euro; 143.90</strong></p>
-                                    <button class="widget__btn">Purchase</button>
-                                </div>
-                            </form>
-                        </section>
+                    <section class="widget widget--primary">
+                        <header class="widget__header">
+                            <div class="widget__number">4</div>
+                            <h3>Payment Information</h3>
+                        </header>
+                        <form class="widget__form">
+                            <input required type="text" placeholder="Credit card number">
+                            <input required type="text" placeholder="CVV">
+                            <div class="widget__total-amount">
+                                <p>Total: <strong class="price price--primary">&euro; 143.90</strong></p>
+                                <button class="widget__btn">Purchase</button>
+                            </div>
+                        </form>
                     </section>
-                </div>
-
+                </section>
+            </div>
         </section>
 
         <section class="info-block">
@@ -162,7 +162,7 @@
                     </div>
 
                     <div class="l-col-3__item">
-                        <section class="info-block__item info-block__item--contact--us">
+                        <section class="info-block__item info-block__item--contact">
                             <h4 class="info-block__title">
                                 Need more info? Call Us
                             </h4>
@@ -197,6 +197,7 @@
         <footer class="footer">
             <span class="footer__text">Copyright 2016 SomeCompany, Inc.</span>
         </footer>
+
     </section>
 </body>
 </html>
