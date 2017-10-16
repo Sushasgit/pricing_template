@@ -1,8 +1,8 @@
-##Requirements:
+## Requirements:
 * nodejs
 * npm
 
-##Building:
+## Building:
 * `npm i`
 * Development type - `npm run dev`
 * Production type - `npm run prod`
