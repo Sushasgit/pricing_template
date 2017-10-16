@@ -1,0 +1,25 @@
+.l
+  &-wrapper
+    margin 0 auto 2em
+
+    @media (min-width: tablet-max)
+      margin-top 2em
+      width 80%
+
+  &-col-3
+    @extend .flex-between
+
+    &__item
+      flex-basis 32%
+
+    @media (max-width: mobile-max)
+      &__item
+        &:not(:last-child)
+          margin-bottom 1em
+  &-col-2
+    @extend .flex-between
+    &:not(:last-child)
+      margin-right 1em
+
+    &__item
+      flex-basis 49%

@@ -1,0 +1,42 @@
+/**
+ * @example
+ * background-image: url('images/webpack-logo.svg')
+ */
+
+*
+  box-sizing border-box
+
+img
+textarea
+  max-width 100%
+
+body
+  font 100% / 1.3 'Montserrat', sans-serif
+
+a
+  color lightness(dark-blue, 40)
+
+  &:hover
+  &:focus
+    color dark-blue
+    text-decoration none
+
+small
+  white-space nowrap
+  font-weight 400
+
+ul
+  padding-left: 24px;
+
+
+// генератор классов цены для обеспечения текста цены цветом
+price-types = {
+  blue: soft-blue
+  green: default-green
+  primary: dark-blue
+}
+
+.price
+  for type, color in price-types
+    &--{type}
+      color: color

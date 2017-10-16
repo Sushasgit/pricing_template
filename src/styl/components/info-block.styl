@@ -1,0 +1,39 @@
+
+.info-block
+  background-color #133866
+  color #ffffff
+  text-align center
+  padding 2em 16px
+
+  &__item
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+    margin-top 2em
+
+  &__item::before 
+    content :""
+    width 50px
+    height 50px
+    background-repeat no-repeat
+    display block
+    margin 0 auto
+
+  &__item--price:before
+    background-image url("images/hand-icon.png")
+
+  &__item--contact--us:before
+    background-image url("images/phone-icon.png")
+
+  &__item--trial-version:before
+    background-image url("images/arrow.png")
+
+  &__btn
+    @extend .btn
+    background-color transparent
+    color: light-grey
+    border 1px solid #ffffff
+    &:hover,&:focus
+      color:lightness(light-grey, 80)
+      border-color lightness(light-grey, 80)

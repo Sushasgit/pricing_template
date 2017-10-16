@@ -1,0 +1,13 @@
+.menu
+  @extend .flex-between
+
+  &__item
+    flex-basis 20%
+    text-align center
+
+    a
+      width 100%
+
+    &--active
+      a
+        background-color lightness(dark-blue, 40)

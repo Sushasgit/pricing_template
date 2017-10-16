@@ -1,0 +1,60 @@
+// Миксин для генерации модификаторов widget-а, с разными цветами
+set-color-to-widget(modifier = 'primary', color = dark-blue)
+  selector = '.widget'
+
+  {selector}
+    &--{modifier}
+      border 1px solid color
+      &:last-child
+        margin-top: 2em;
+
+
+      {selector}__header
+        background-color color
+
+set-color-to-widget()
+set-color-to-widget('soft-blue', soft-blue)
+set-color-to-widget('green', default-green)
+
+
+.widget
+  &__header
+  &__content
+    padding 1em 16px
+
+  &__header
+    display flex
+    align-items center
+    color light-grey
+
+  &__number
+    width 50px
+    height 50px
+    margin-right 8px
+    border 1px solid
+    border-radius 50%
+    line-height 50px
+    vertical-align middle
+    text-align center
+    
+  &__container-personal-data
+    display: flex;
+    margin-top 2em
+
+  &__form
+    padding 20px
+    input
+      width: 100%
+      padding: .5rem .75rem
+      border: 1px solid rgba(0,0,0,.15)
+      border-radius: .25rem
+      margin-bottom: 1.6em
+  &__total-amount
+    display flex
+    justify-content space-around
+    align-items center
+
+  &__btn
+    @extend .btn
+    background-color dark-blue
+    color #ffffff
